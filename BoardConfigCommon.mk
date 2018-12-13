@@ -29,7 +29,7 @@ BOARD_TAGS_OFFSET = 0x04000000
 BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 TARGET_KERNEL_ARCH := arm
-TARGET_KERNEL_SOURCE := kernel/wiko/mt6739
+TARGET_KERNEL_SOURCE := kernel/tcl/mt6739
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6739
@@ -86,4 +86,4 @@ BOARD_VNDK_RUNTIME_DISABLE := true
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Inherit from the proprietary version
-# -include vendor/wiko/mt6739-common/BoardConfigVendor.mk
+# -include vendor/tcl/mt6739-common/BoardConfigVendor.mk
